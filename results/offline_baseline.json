@@ -1,0 +1,867 @@
+{
+  "summary": {
+    "mode": "offline_baseline",
+    "total": 24,
+    "passed": 24,
+    "routing_accuracy": 1.0,
+    "scope": "Route and calculator-intent agreement, not answer-quality accuracy. Offline mode does not validate LLM behavior."
+  },
+  "results": [
+    {
+      "id": "c3d4d86f-fa8d-4f41-9067-0718f4782b64",
+      "timestamp": "2026-09-28T10:00:22.983368+00:00",
+      "query": "What is 10 × 20?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "answer_directly",
+        "reason": "No private document or specialized tool is required.",
+        "needs_calculator": false,
+        "retrieval_query": "What is 10 × 20?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "200",
+      "status": "ok",
+      "latency_ms": 0.14,
+      "expected_route": "answer_directly",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "540a80c5-d3a8-408d-b133-c6ce71580e82",
+      "timestamp": "2026-09-28T10:00:22.983527+00:00",
+      "query": "What is the capital of France?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "answer_directly",
+        "reason": "No private document or specialized tool is required.",
+        "needs_calculator": false,
+        "retrieval_query": "What is the capital of France?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Offline teaching mode: this question routes directly without retrieval. Enable Live Euron for a generated answer.",
+      "status": "ok",
+      "latency_ms": 0.03,
+      "expected_route": "answer_directly",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "167e2b4b-4743-4c39-b68a-e7ebd08c93f6",
+      "timestamp": "2026-09-28T10:00:22.983557+00:00",
+      "query": "Explain photosynthesis to a student.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "answer_directly",
+        "reason": "No private document or specialized tool is required.",
+        "needs_calculator": false,
+        "retrieval_query": "Explain photosynthesis to a student.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Offline teaching mode: this question routes directly without retrieval. Enable Live Euron for a generated answer.",
+      "status": "ok",
+      "latency_ms": 0.02,
+      "expected_route": "answer_directly",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "60f3e8fd-cd16-4627-b06d-047eba2dc53d",
+      "timestamp": "2026-09-28T10:00:22.983576+00:00",
+      "query": "Write a haiku about the ocean.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "answer_directly",
+        "reason": "No private document or specialized tool is required.",
+        "needs_calculator": false,
+        "retrieval_query": "Write a haiku about the ocean.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Offline teaching mode: this question routes directly without retrieval. Enable Live Euron for a generated answer.",
+      "status": "ok",
+      "latency_ms": 0.01,
+      "expected_route": "answer_directly",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "f30b98db-f01c-4184-896a-9e772afe0608",
+      "timestamp": "2026-09-28T10:00:22.983590+00:00",
+      "query": "What is retrieval augmented generation?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "answer_directly",
+        "reason": "No private document or specialized tool is required.",
+        "needs_calculator": false,
+        "retrieval_query": "What is retrieval augmented generation?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Offline teaching mode: this question routes directly without retrieval. Enable Live Euron for a generated answer.",
+      "status": "ok",
+      "latency_ms": 0.01,
+      "expected_route": "answer_directly",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "55de42d0-58fa-4e8c-b8b8-a54b65a66c90",
+      "timestamp": "2026-09-28T10:00:22.983603+00:00",
+      "query": "Give three tips for learning Python.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "answer_directly",
+        "reason": "No private document or specialized tool is required.",
+        "needs_calculator": false,
+        "retrieval_query": "Give three tips for learning Python.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Offline teaching mode: this question routes directly without retrieval. Enable Live Euron for a generated answer.",
+      "status": "ok",
+      "latency_ms": 0.01,
+      "expected_route": "answer_directly",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "e89e636c-a9fc-427c-97ad-b1580b9ac9a2",
+      "timestamp": "2026-09-28T10:00:22.983616+00:00",
+      "query": "What does our uploaded policy say about refunds?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": false,
+        "retrieval_query": "What does our uploaded policy say about refunds?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "What does our uploaded policy say about refunds?",
+          "matches": 1
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:6:0",
+          "text": "## Processing\nApproved refunds are processed within 5 to 7 business days to the original payment method.",
+          "score": 2.0869
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.05,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "46decd62-9e4e-4a66-8d8a-50c3d23922af",
+      "timestamp": "2026-09-28T10:00:22.983677+00:00",
+      "query": "What is the return window in our policy?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": false,
+        "retrieval_query": "What is the return window in our policy?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "What is the return window in our policy?",
+          "matches": 2
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:8:0",
+          "text": "## Support\nContact classroom-support@example.com with your order number to request a return.",
+          "score": 1.4919
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:4:0",
+          "text": "## Refund calculation\nFor an eligible return, refund 90% of the product purchase price. The remaining 10% is a restocking fee. Original shipping charges are non-refundable. Do not subtract shipping from the product price if it is already listed separately. For multiple eligible products, apply 90% to the sum of their product prices.",
+          "score": 0.8249
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.06,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "f7f21fce-1040-42aa-acfc-6096d69d18b1",
+      "timestamp": "2026-09-28T10:00:22.983741+00:00",
+      "query": "Does our policy refund original shipping charges?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": false,
+        "retrieval_query": "Does our policy refund original shipping charges?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "Does our policy refund original shipping charges?",
+          "matches": 5
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:5:0",
+          "text": "## Damaged products\nProducts reported damaged on delivery within 7 days qualify for a full product-price refund, with no restocking fee. Original shipping charges remain non-refundable.",
+          "score": 3.5981
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:4:0",
+          "text": "## Refund calculation\nFor an eligible return, refund 90% of the product purchase price. The remaining 10% is a restocking fee. Original shipping charges are non-refundable. Do not subtract shipping from the product price if it is already listed separately. For multiple eligible products, apply 90% to the sum of their product prices.",
+          "score": 3.4548
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:1:0",
+          "text": "# Classroom Store Refund Policy",
+          "score": 1.1052
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:6:0",
+          "text": "## Processing\nApproved refunds are processed within 5 to 7 business days to the original payment method.",
+          "score": 1.1
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:3:0",
+          "text": "## Eligibility\nUnused physical products returned within 30 calendar days of delivery are eligible for a refund. A receipt or order number is required. Used products and returns after 30 days are not eligible.",
+          "score": 0.5811
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.08,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "aa702cd7-032a-4cf3-9091-c279924c00d1",
+      "timestamp": "2026-09-28T10:00:22.983820+00:00",
+      "query": "What does the policy say about downloaded digital products?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": false,
+        "retrieval_query": "What does the policy say about downloaded digital products?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "What does the policy say about downloaded digital products?",
+          "matches": 4
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:7:0",
+          "text": "## Digital products\nDownloaded digital products are non-refundable. An undownloaded digital product can be refunded in full within 14 days of purchase.",
+          "score": 5.7153
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:5:0",
+          "text": "## Damaged products\nProducts reported damaged on delivery within 7 days qualify for a full product-price refund, with no restocking fee. Original shipping charges remain non-refundable.",
+          "score": 0.8846
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:3:0",
+          "text": "## Eligibility\nUnused physical products returned within 30 calendar days of delivery are eligible for a refund. A receipt or order number is required. Used products and returns after 30 days are not eligible.",
+          "score": 0.8703
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:4:0",
+          "text": "## Refund calculation\nFor an eligible return, refund 90% of the product purchase price. The remaining 10% is a restocking fee. Original shipping charges are non-refundable. Do not subtract shipping from the product price if it is already listed separately. For multiple eligible products, apply 90% to the sum of their product prices.",
+          "score": 0.4464
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.06,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "fbf54c7c-5e3b-4755-8d1b-bf79ea106b11",
+      "timestamp": "2026-09-28T10:00:22.983882+00:00",
+      "query": "How long does refund processing take under our policy?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": false,
+        "retrieval_query": "How long does refund processing take under our policy?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "How long does refund processing take under our policy?",
+          "matches": 5
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:6:0",
+          "text": "## Processing\nApproved refunds are processed within 5 to 7 business days to the original payment method.",
+          "score": 2.0869
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:1:0",
+          "text": "# Classroom Store Refund Policy",
+          "score": 1.1052
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:4:0",
+          "text": "## Refund calculation\nFor an eligible return, refund 90% of the product purchase price. The remaining 10% is a restocking fee. Original shipping charges are non-refundable. Do not subtract shipping from the product price if it is already listed separately. For multiple eligible products, apply 90% to the sum of their product prices.",
+          "score": 0.7099
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:5:0",
+          "text": "## Damaged products\nProducts reported damaged on delivery within 7 days qualify for a full product-price refund, with no restocking fee. Original shipping charges remain non-refundable.",
+          "score": 0.5939
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:3:0",
+          "text": "## Eligibility\nUnused physical products returned within 30 calendar days of delivery are eligible for a refund. A receipt or order number is required. Used products and returns after 30 days are not eligible.",
+          "score": 0.5811
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.1,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "db147b75-e777-44d1-99c8-a9c65a40c13b",
+      "timestamp": "2026-09-28T10:00:22.983980+00:00",
+      "query": "How can I contact our support according to the policy?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": false,
+        "retrieval_query": "How can I contact our support according to the policy?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "How can I contact our support according to the policy?",
+          "matches": 2
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:8:0",
+          "text": "## Support\nContact classroom-support@example.com with your order number to request a return.",
+          "score": 4.9342
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:7:0",
+          "text": "## Digital products\nDownloaded digital products are non-refundable. An undownloaded digital product can be refunded in full within 14 days of purchase.",
+          "score": 1.769
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.1,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "344f076b-c146-4f0d-b1fb-8976baabca02",
+      "timestamp": "2026-09-28T10:00:22.984079+00:00",
+      "query": "Calculate the refund under our policy for an unused product costing 2000 returned 10 days after delivery with a receipt.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": true,
+        "retrieval_query": "Calculate the refund under our policy for an unused product costing 2000 returned 10 days after delivery with a receipt.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "Calculate the refund under our policy for an unused product costing 2000 returned 10 days after delivery with a receipt.",
+          "matches": 6
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:3:0",
+          "text": "## Eligibility\nUnused physical products returned within 30 calendar days of delivery are eligible for a refund. A receipt or order number is required. Used products and returns after 30 days are not eligible.",
+          "score": 8.5335
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:5:0",
+          "text": "## Damaged products\nProducts reported damaged on delivery within 7 days qualify for a full product-price refund, with no restocking fee. Original shipping charges remain non-refundable.",
+          "score": 4.192
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:4:0",
+          "text": "## Refund calculation\nFor an eligible return, refund 90% of the product purchase price. The remaining 10% is a restocking fee. Original shipping charges are non-refundable. Do not subtract shipping from the product price if it is already listed separately. For multiple eligible products, apply 90% to the sum of their product prices.",
+          "score": 3.068
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:7:0",
+          "text": "## Digital products\nDownloaded digital products are non-refundable. An undownloaded digital product can be refunded in full within 14 days of purchase.",
+          "score": 1.6168
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:8:0",
+          "text": "## Support\nContact classroom-support@example.com with your order number to request a return.",
+          "score": 1.4919
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:1:0",
+          "text": "# Classroom Store Refund Policy",
+          "score": 1.1052
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.2,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": true,
+      "passed": true
+    },
+    {
+      "id": "8a399f02-a1be-4c0c-8c53-e85ea0fc0edd",
+      "timestamp": "2026-09-28T10:00:22.984285+00:00",
+      "query": "Calculate the refund under our policy for a product costing 800 reported damaged on delivery within 3 days.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": true,
+        "retrieval_query": "Calculate the refund under our policy for a product costing 800 reported damaged on delivery within 3 days.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "Calculate the refund under our policy for a product costing 800 reported damaged on delivery within 3 days.",
+          "matches": 6
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:5:0",
+          "text": "## Damaged products\nProducts reported damaged on delivery within 7 days qualify for a full product-price refund, with no restocking fee. Original shipping charges remain non-refundable.",
+          "score": 7.5102
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:3:0",
+          "text": "## Eligibility\nUnused physical products returned within 30 calendar days of delivery are eligible for a refund. A receipt or order number is required. Used products and returns after 30 days are not eligible.",
+          "score": 3.1063
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:7:0",
+          "text": "## Digital products\nDownloaded digital products are non-refundable. An undownloaded digital product can be refunded in full within 14 days of purchase.",
+          "score": 2.3012
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:4:0",
+          "text": "## Refund calculation\nFor an eligible return, refund 90% of the product purchase price. The remaining 10% is a restocking fee. Original shipping charges are non-refundable. Do not subtract shipping from the product price if it is already listed separately. For multiple eligible products, apply 90% to the sum of their product prices.",
+          "score": 1.9141
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:6:0",
+          "text": "## Processing\nApproved refunds are processed within 5 to 7 business days to the original payment method.",
+          "score": 1.6147
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:1:0",
+          "text": "# Classroom Store Refund Policy",
+          "score": 1.1052
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.17,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": true,
+      "passed": true
+    },
+    {
+      "id": "ccf02043-f7b3-4853-b79f-bb8ad530518c",
+      "timestamp": "2026-09-28T10:00:22.984460+00:00",
+      "query": "Calculate the refund based on this policy.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": true,
+        "retrieval_query": "Calculate the refund based on this policy.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "Calculate the refund based on this policy.",
+          "matches": 4
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:1:0",
+          "text": "# Classroom Store Refund Policy",
+          "score": 1.1052
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:4:0",
+          "text": "## Refund calculation\nFor an eligible return, refund 90% of the product purchase price. The remaining 10% is a restocking fee. Original shipping charges are non-refundable. Do not subtract shipping from the product price if it is already listed separately. For multiple eligible products, apply 90% to the sum of their product prices.",
+          "score": 0.7099
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:5:0",
+          "text": "## Damaged products\nProducts reported damaged on delivery within 7 days qualify for a full product-price refund, with no restocking fee. Original shipping charges remain non-refundable.",
+          "score": 0.5939
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:3:0",
+          "text": "## Eligibility\nUnused physical products returned within 30 calendar days of delivery are eligible for a refund. A receipt or order number is required. Used products and returns after 30 days are not eligible.",
+          "score": 0.5811
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.07,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": true,
+      "passed": true
+    },
+    {
+      "id": "1e562e60-e2cd-4f21-813e-1111520875c1",
+      "timestamp": "2026-09-28T10:00:22.984529+00:00",
+      "query": "Calculate the total refund under our policy for two unused products priced 100 and 300 returned within 10 days with receipts.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "retrieve_documents",
+        "reason": "The question depends on a private document.",
+        "needs_calculator": true,
+        "retrieval_query": "Calculate the total refund under our policy for two unused products priced 100 and 300 returned within 10 days with receipts.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "retrieve_documents",
+          "query": "Calculate the total refund under our policy for two unused products priced 100 and 300 returned within 10 days with receipts.",
+          "matches": 6
+        }
+      ],
+      "sources": [
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:3:0",
+          "text": "## Eligibility\nUnused physical products returned within 30 calendar days of delivery are eligible for a refund. A receipt or order number is required. Used products and returns after 30 days are not eligible.",
+          "score": 5.9069
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:5:0",
+          "text": "## Damaged products\nProducts reported damaged on delivery within 7 days qualify for a full product-price refund, with no restocking fee. Original shipping charges remain non-refundable.",
+          "score": 3.7637
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:7:0",
+          "text": "## Digital products\nDownloaded digital products are non-refundable. An undownloaded digital product can be refunded in full within 14 days of purchase.",
+          "score": 2.3499
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:4:0",
+          "text": "## Refund calculation\nFor an eligible return, refund 90% of the product purchase price. The remaining 10% is a restocking fee. Original shipping charges are non-refundable. Do not subtract shipping from the product price if it is already listed separately. For multiple eligible products, apply 90% to the sum of their product prices.",
+          "score": 2.3101
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:6:0",
+          "text": "## Processing\nApproved refunds are processed within 5 to 7 business days to the original payment method.",
+          "score": 1.6147
+        },
+        {
+          "source": "refund_policy.md",
+          "id": "refund_policy.md:8:0",
+          "text": "## Support\nContact classroom-support@example.com with your order number to request a return.",
+          "score": 1.4919
+        }
+      ],
+      "answer": "Offline teaching mode: these passages were retrieved, but no LLM interpreted them. Enable Live Euron to answer or calculate from the policy.",
+      "status": "ok",
+      "latency_ms": 0.22,
+      "expected_route": "retrieve_documents",
+      "expected_calculator": true,
+      "passed": true
+    },
+    {
+      "id": "63454c11-4510-4bb2-a054-ceaa2dd5eb3d",
+      "timestamp": "2026-09-28T10:00:22.984756+00:00",
+      "query": "Calculate (1250 * 0.9) - 20",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "use_another_tool",
+        "reason": "A calculation benefits from the calculator tool.",
+        "needs_calculator": true,
+        "retrieval_query": "Calculate (1250 * 0.9) - 20",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "calculator",
+          "expression": "(1250 * 0.9) - 20",
+          "result": 1105.0
+        }
+      ],
+      "sources": [],
+      "answer": "1105.0",
+      "status": "ok",
+      "latency_ms": 0.4,
+      "expected_route": "use_another_tool",
+      "expected_calculator": true,
+      "passed": true
+    },
+    {
+      "id": "590cf230-8060-4713-b2b0-b7aa1785b901",
+      "timestamp": "2026-09-28T10:00:22.985179+00:00",
+      "query": "Calculate 18 percent of 2450.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "use_another_tool",
+        "reason": "A calculation benefits from the calculator tool.",
+        "needs_calculator": true,
+        "retrieval_query": "Calculate 18 percent of 2450.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Offline mode accepts arithmetic expressions such as “Calculate (1250 * 0.9) - 20”. Enable Live Euron for natural-language calculations.",
+      "status": "ok",
+      "latency_ms": 0.1,
+      "expected_route": "use_another_tool",
+      "expected_calculator": true,
+      "passed": true
+    },
+    {
+      "id": "06ed32c6-dc34-425c-992a-de9c96f126e6",
+      "timestamp": "2026-09-28T10:00:22.985280+00:00",
+      "query": "Calculate compound interest on 1000 at 5 percent annually for 3 years.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "use_another_tool",
+        "reason": "A calculation benefits from the calculator tool.",
+        "needs_calculator": true,
+        "retrieval_query": "Calculate compound interest on 1000 at 5 percent annually for 3 years.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Offline mode accepts arithmetic expressions such as “Calculate (1250 * 0.9) - 20”. Enable Live Euron for natural-language calculations.",
+      "status": "ok",
+      "latency_ms": 0.04,
+      "expected_route": "use_another_tool",
+      "expected_calculator": true,
+      "passed": true
+    },
+    {
+      "id": "842a4710-a142-4e28-afca-a8199caab0fa",
+      "timestamp": "2026-09-28T10:00:22.985323+00:00",
+      "query": "Calculate (48 * 37) / 6",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "use_another_tool",
+        "reason": "A calculation benefits from the calculator tool.",
+        "needs_calculator": true,
+        "retrieval_query": "Calculate (48 * 37) / 6",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [
+        {
+          "name": "calculator",
+          "expression": "(48 * 37) / 6",
+          "result": 296.0
+        }
+      ],
+      "sources": [],
+      "answer": "296.0",
+      "status": "ok",
+      "latency_ms": 0.07,
+      "expected_route": "use_another_tool",
+      "expected_calculator": true,
+      "passed": true
+    },
+    {
+      "id": "2a757575-6966-4014-b97a-ff6f32ddf6e5",
+      "timestamp": "2026-09-28T10:00:22.985396+00:00",
+      "query": "Can you explain it?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "ask_for_clarification",
+        "reason": "Essential context or an unavailable external tool is needed.",
+        "needs_calculator": false,
+        "retrieval_query": "Can you explain it?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Please provide the missing text, context, or data. External lookup and account actions are unavailable.",
+      "status": "ok",
+      "latency_ms": 0.02,
+      "expected_route": "ask_for_clarification",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "724fc6fb-199c-4048-b87d-85152f3bf8ba",
+      "timestamp": "2026-09-28T10:00:22.985412+00:00",
+      "query": "Do it for that one.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "ask_for_clarification",
+        "reason": "Essential context or an unavailable external tool is needed.",
+        "needs_calculator": false,
+        "retrieval_query": "Do it for that one.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Please provide the missing text, context, or data. External lookup and account actions are unavailable.",
+      "status": "ok",
+      "latency_ms": 0.01,
+      "expected_route": "ask_for_clarification",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "396a8f47-1930-41f7-ac2c-e31c864ccc83",
+      "timestamp": "2026-09-28T10:00:22.985423+00:00",
+      "query": "What is the weather in Delhi right now?",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "ask_for_clarification",
+        "reason": "Essential context or an unavailable external tool is needed.",
+        "needs_calculator": false,
+        "retrieval_query": "What is the weather in Delhi right now?",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Please provide the missing text, context, or data. External lookup and account actions are unavailable.",
+      "status": "ok",
+      "latency_ms": 0.01,
+      "expected_route": "ask_for_clarification",
+      "expected_calculator": false,
+      "passed": true
+    },
+    {
+      "id": "3838a3cc-273a-4099-b3f6-1f11fcc34111",
+      "timestamp": "2026-09-28T10:00:22.985435+00:00",
+      "query": "Translate this.",
+      "mode": "offline_baseline",
+      "model": null,
+      "decision": {
+        "route": "ask_for_clarification",
+        "reason": "Essential context or an unavailable external tool is needed.",
+        "needs_calculator": false,
+        "retrieval_query": "Translate this.",
+        "clarification": "Please provide the missing text, context, or data. External lookup and account actions are unavailable."
+      },
+      "tools": [],
+      "sources": [],
+      "answer": "Please provide the missing text, context, or data. External lookup and account actions are unavailable.",
+      "status": "ok",
+      "latency_ms": 0.01,
+      "expected_route": "ask_for_clarification",
+      "expected_calculator": false,
+      "passed": true
+    }
+  ]
+}
